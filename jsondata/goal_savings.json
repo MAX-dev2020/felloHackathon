@@ -1,0 +1,80 @@
+{
+  "uuid": "f049a90b-58a6-497e-b774-f0b64c4911c3",
+  "lastMigration": 32,
+  "name": "Goal savings",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "192.168.0.135",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "4f965ca2-8818-43e9-ac9c-b592b3afd7bf",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "active_goals",
+      "responses": [
+        {
+          "uuid": "53c4ac33-c0f7-4a8a-9b54-52dcf3c348c4",
+          "body": "{\n  \"activeGoals\": [\n    {\n      \"id\": 1,\n      \"title\": \"Vacation to Bali\",\n      \"currentSavings\": 1500,\n      \"targetAmount\": 3000,\n      \"progress\": 0.5,\n      \"deadline\": \"2023-12-01\",\n      \"nextMilestone\": 2000,\n      \"savingsPlan\": \"$100 every week\",\n      \"image\": \"assets\\images\\trip.png\"\n    },\n    {\n      \"id\": 2,\n      \"title\": \"New Gaming Console\",\n      \"currentSavings\": 250,\n      \"targetAmount\": 500,\n      \"progress\": 0.5,\n      \"deadline\": \"2023-06-15\",\n      \"nextMilestone\": 300,\n      \"savingsPlan\": \"$50 every month\",\n      \"image\": \"assets\\images\\console.png\"\n    {\n      \"id\": 2,\n      \"title\": \"New Bike\",\n      \"currentSavings\": 250,\n      \"targetAmount\": 500,\n      \"progress\": 0.5,\n      \"deadline\": \"2023-06-15\",\n      \"nextMilestone\": 300,\n      \"savingsPlan\": \"$50 every month\",\n      \"image\": \"D:\\flutter apps\\felloHackathon\\goal_based_savings_app\\assets\\images\\motorcycle.jpg\"\n    }\n    \n  ]\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "4f965ca2-8818-43e9-ac9c-b592b3afd7bf"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
