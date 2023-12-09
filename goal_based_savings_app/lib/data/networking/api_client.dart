@@ -12,11 +12,11 @@ class ApiClient {
 
   Future<dynamic> get(String path) async {
     final response = await httpClient.get(Uri.parse('$baseUrl$path'));
-
+    // print(response.body);
     if (response.statusCode != 200) {
       throw Exception('Failed to load data!');
     }
 
-    return json.decode(response.body);
+    return response.body;
   }
 }

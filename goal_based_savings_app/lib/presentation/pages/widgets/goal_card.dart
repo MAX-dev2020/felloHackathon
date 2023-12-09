@@ -49,7 +49,7 @@ class GoalCard extends StatelessWidget {
             SizedBox(height: 8.0),
             Text("Plan: $savingsPlan"),
             SizedBox(height: 8.0),
-            Image.asset('assets/images/$image'),
+            Image.asset(image),
             SizedBox(height: 8.0),
             ElevatedButton(
               onPressed: () {
